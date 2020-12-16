@@ -128,7 +128,7 @@ function renderPlaces(places,position) {
             });
 
         scene.appendChild(text);
-        scene.appendChild(event);
+        // scene.appendChild(event);
         
 
         // add place icon
