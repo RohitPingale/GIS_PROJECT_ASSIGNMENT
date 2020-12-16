@@ -14,7 +14,7 @@ window.onload = () => {
             
              dynamicLoadPlaces(position.coords)
                 .then((places) => {
-                    renderPlaces(places);
+                    renderPlaces(places,position);
                 })
         },
             (err) => console.error('Error in retrieving position', err),
@@ -77,7 +77,7 @@ function dynamicLoadPlaces(position) {
         })
 };
 
-function renderPlaces(places) {
+function renderPlaces(places,position) {
     let scene = document.querySelector('a-scene');
 
     places.forEach((place) => {
