@@ -27,21 +27,21 @@ window.onload = () => {
     }
 };
 
-AFRAME.registerComponent('clickhandler', {
-        init: function() {
-            this.el.addEventListener('touchstart', () => {
-                alert('HELLO')
-            });
-            //aframe over
-        }});
+// AFRAME.registerComponent('clickhandler', {
+//         init: function() {
+//             this.el.addEventListener('touchstart', () => {
+//                 alert('HELLO')
+//             });
+//             //aframe over
+//         }});
 
-AFRAME.registerComponent('clickhandler', {
-        init: function() {
-            this.el.addEventListener('click', () => {
-                alert(latitude)
-            });
-            //aframe over
-        }});
+// AFRAME.registerComponent('clickhandler', {
+//         init: function() {
+//             this.el.addEventListener('click', () => {
+//                 alert(latitude)
+//             });
+//             //aframe over
+//         }});
             
             
 
