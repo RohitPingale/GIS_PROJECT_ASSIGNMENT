@@ -92,7 +92,7 @@ function renderPlaces(places,position) {
           var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
             Math.sin(dLon/2) * Math.sin(dLon/2) * Math.cos(lat1) * Math.cos(lat2); 
           var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
-          double d = Math.round(R * c * 100.0)/ 100.0;
+          var d = (double) Math.round(R * c * 100.0)/ 100.0;
           return d;
         }
 
