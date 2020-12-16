@@ -95,12 +95,12 @@ function renderPlaces(places,position) {
         text.setAttribute('Distnace', (calcCrow(latitude,longitude,position.latitude,position.longitude)));
         text.setAttribute('href', 'http://www.example.com/');
         text.setAttribute('scale', '15 15 15');
-        console.log(calcCrow(latitude,longitude,position.latitude,position.longitude));
 
         text.addEventListener('loaded', () => {
             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
         });
-        console.log("Text is set");
+        
+        console.log(calcCrow(latitude,longitude,position.latitude,position.longitude));
         scene.appendChild(text);
         
        // distance between them as the crow flies (in km)
