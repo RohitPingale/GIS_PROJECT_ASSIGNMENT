@@ -123,8 +123,12 @@ function renderPlaces(places,position) {
             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
         });
 
-        
+        let event = document.addEventListener('click', () => {
+                alert(latitude)
+            });
+
         scene.appendChild(text);
+        scene.appendChild(event);
         
 
         // add place icon
