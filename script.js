@@ -99,8 +99,8 @@ function renderPlaces(places,position) {
         text.addEventListener('loaded', () => {
             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
         });
+
         
-        console.log(calcCrow(latitude,longitude,position.latitude,position.longitude));
         scene.appendChild(text);
         
        // distance between them as the crow flies (in km)
@@ -126,6 +126,7 @@ function renderPlaces(places,position) {
         }
 
         // add place icon
+        console.log(calcCrow(latitude,longitude,position.latitude,position.longitude));
         console.log(place.name);
         const icon = document.createElement('a-image');
         icon.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`);
